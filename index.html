@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Futebol</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Descubra que clube você jogaria</h1>
+
+        <p>Responda às perguntas e descubra!</p>
+
+
+       <section class="pergunta">
+
+            <h2>1. Qual destino você escolheria?</h2>
+
+            <button onclick="responder('aventura', 1, this)">
+                Montanha
+            </button>
+
+            <button onclick="responder('relax', 1, this)">
+                Praia
+            </button>
+
+        </section>
+
+
+        <section class="pergunta">
+
+            <h2>2. O que você prefere fazer?</h2>
+
+           <button onclick="responder('aventura', 2, this)">
+                Fazer uma trilha
+            </button>
+
+            <button onclick="responder('relax', 2, this)">
+                Descansar
+            </button>
+
+        </section>
+
+
+        <section id="resultado">
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
