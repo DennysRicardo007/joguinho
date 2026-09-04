@@ -14,21 +14,32 @@
 
     <main>
 
-        <h1>Descubra que clube você jogaria</h1>
+        <div class="top-badge"> FUTEBOL</div>
 
-        <p>Responda às perguntas e descubra!</p>
+        <h1>Qual clube<br><strong>Você jogaria?</strong></h1>
 
+        <p>Descubra em qual clube você se encaixaria.</p>
 
-       <section class="pergunta">
+        <div class="quiz-grid">
 
-            <h2>1. Qual destino você escolheria?</h2>
+        <section class="pergunta">
 
-            <button onclick="responder('aventura', 1, this)">
-                Montanha
+            <h2>1. O jogo está empatado e faltam 5 minutos. O que você faz?</h2>
+
+            <button onclick="responder('ofensivo', 1, this)">
+                A) Parto pra cima e tento decidir.
             </button>
 
-            <button onclick="responder('relax', 1, this)">
-                Praia
+            <button onclick="responder('tatico', 1, this)">
+                B) Organizo o time e penso na melhor jogada.
+            </button>
+
+            <button onclick="responder('ofensivo', 1, this)">
+                C) Dou o sangue até o último segundo.
+            </button>
+
+            <button onclick="responder('tatico', 1, this)">
+                D) Espero o momento certo para dar o golpe.
             </button>
 
         </section>
@@ -36,21 +47,91 @@
 
         <section class="pergunta">
 
-            <h2>2. O que você prefere fazer?</h2>
+            <h2>2. Qual característica mais combina com você?</h2>
 
-           <button onclick="responder('aventura', 2, this)">
-                Fazer uma trilha
+            <button onclick="responder('ofensivo', 2, this)">
+                A) Criatividade 🎨
             </button>
 
-            <button onclick="responder('relax', 2, this)">
-                Descansar
+            <button onclick="responder('tatico', 2, this)">
+                B) Liderança 👑
+            </button>
+
+            <button onclick="responder('ofensivo', 2, this)">
+                C) Raça 🔥
+            </button>
+
+            <button onclick="responder('tatico', 2, this)">
+                D) Disciplina 💪
             </button>
 
         </section>
 
 
-        <section id="resultado">
+        <section class="pergunta">
 
+            <h2>3. Qual posição você escolheria?</h2>
+
+            <button onclick="responder('ofensivo', 3, this)">A) Atacante — quero fazer gol.</button>
+            <button onclick="responder('tatico', 3, this)">B) Meia — quero criar as jogadas.</button>
+            <button onclick="responder('ofensivo', 3, this)">C) Zagueiro — ninguém passa.</button>
+            <button onclick="responder('tatico', 3, this)">D) Volante — faço o trabalho pesado.</button>
+
+        </section>
+
+
+        <section class="pergunta">
+
+            <h2>4. O que mais importa em um clube?</h2>
+
+            <button onclick="responder('tatico', 4, this)">A) História e tradição.</button>
+            <button onclick="responder('ofensivo', 4, this)">B) Torcida apaixonada.</button>
+            <button onclick="responder('tatico', 4, this)">C) Estrutura e títulos.</button>
+            <button onclick="responder('ofensivo', 4, this)">D) Poder ser protagonista.</button>
+
+        </section>
+
+
+        <section class="pergunta">
+
+            <h2>5. Você perdeu um clássico. O que faz?</h2>
+
+            <button onclick="responder('ofensivo', 5, this)">A) Já penso na revanche. 😤</button>
+            <button onclick="responder('tatico', 5, this)">B) Analiso onde erramos. 🧠</button>
+            <button onclick="responder('ofensivo', 5, this)">C) Continuo trabalhando até melhorar. 💪</button>
+            <button onclick="responder('tatico', 5, this)">D) Assumo a responsabilidade. 🫡</button>
+
+        </section>
+
+
+        <section class="pergunta">
+
+            <h2>6. Qual estádio você escolheria para jogar?</h2>
+
+            <button onclick="responder('tatico', 6, this)">A) Um estádio histórico e tradicional.</button>
+            <button onclick="responder('ofensivo', 6, this)">B) Um caldeirão com a torcida enlouquecida.</button>
+            <button onclick="responder('tatico', 6, this)">C) Um estádio moderno e gigantesco.</button>
+            <button onclick="responder('ofensivo', 6, this)">D) Um estádio onde cada jogo parece uma final.</button>
+
+        </section>
+
+
+        <section class="pergunta">
+
+            <h2>7. Qual frase mais combina com você?</h2>
+
+            <button onclick="responder('ofensivo', 7, this)">A) "Jogo grande é comigo mesmo."</button>
+            <button onclick="responder('ofensivo', 7, this)">B) "O talento sempre encontra um caminho."</button>
+            <button onclick="responder('ofensivo', 7, this)">C) "Até o último minuto, nunca acabou."</button>
+            <button onclick="responder('tatico', 7, this)">D) "Trabalho duro vence talento."</button>
+
+        </section>
+
+        </div>
+
+
+        <section id="resultado" aria-live="polite">
+            <span>Responda todas as perguntas para descobrir seu resultado.</span>
         </section>
 
     </main>
